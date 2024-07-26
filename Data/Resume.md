@@ -5,8 +5,8 @@
 ## Index
 1. [📊 Table 1: Blocks moved and time taken to move the blocks in standard and automatic configurations](#📊-table-1-blocks-moved-and-time-taken-to-move-the-blocks-in-standard-and-automatic-configurations)
 2. [🌐 Table 2: Positions in Virtual Space for Fixed and Standard Configurations](#🌐-table-2-positions-in-virtual-space-for-fixed-and-standard-configurations)
-3. [🗂 Table 3: Quadrants of the five blocks fixed $\phi(P_{\text{VO}})$ and automatic configuration $\phi(P'_{\text{VO}})$](#🗂-table-3-quadrants-of-the-five-blocks-fixed-φpvo-y-automatic-configuration-φpvo)
-4. [📝 Qualitative Results](#📝-qualitative-results)
+3. [🗂 Table 3: Quadrants of the five blocks fixed $\phi(P_{\text{VO}})$ and automatic configuration $\phi(NP_{\text{VO}})$](-table-3-quadrants-of-the-five-blocks-fixed-phip_textvo-and-automatic-configuration-phinp_textvo)
+4. [📝 Qualitative Results](#-qualitative-results)
    - [Results of the Questionnaire](#results-of-the-questionnaire)
 
 
@@ -52,9 +52,9 @@
 | 4     | (0.5700, 1.3100, 0.7100)        | (0.3330, 0.9780, 0.3967)   |
 | 5     | (-0.9680, 0.2700, 0.2000)       | (-0.5403, 0.7891, 0.1053)  |
 
-### 🗂 Table 3: Quadrants of the five blocks fixed $\phi(P_{\text{VO}})$ and automatic configuration $\phi(P'_{\text{VO}})$
+### 🗂 Table 3: Quadrants of the five blocks fixed $\phi(P_{\text{VO}})$ and automatic configuration $\phi(NP_{\text{VO}})$
 
-| ID  | Block | Hlimit | CurrentHMD $(x)$ | Automatic Position $(NP_{\text{VO}})$ | $\phi(NP_{\text{VO}})$ | $\phi(NP_{\text{VO}})$ |
+| ID  | Block | Hlimit | CurrentHMD $(x)$ | Automatic Position $(NP_{\text{VO}})$ | $\phi(P_{\text{VO}})$ | $\phi(NP_{\text{VO}})$ |
 | --- | ----- | ------ | ---------------- |---------------------------------------|----------------------|------------------------|
 | P1  | 1     | 0.7891 | -0.0297          | (-0.4998, 0.9384, 0.4320)             | Q2                   | Q2                     |
 | P1  | 2     | 0.7891 | -0.0297          | (0.3992, 0.9338, 0.2000)              | Q1                   | Q1                     |
