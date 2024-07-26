@@ -3,14 +3,14 @@
 ## Table of Contents
 1. [Summary](#summary)
 2. [Data Folder](#data-folder)
-   - [Data-Participants Folder](#-data-participants-folder)
+   - [Data Participants Folder](#-dataparticipants-folder)
    - [CalibrationDefault.json](#-calibrationdefaultjson)
-   - [Resume.md](#resumemd)
+   - [Resume.md](#-resumemd)
 3. [Detailed Explanation of Files](#detailed-explanation-of-files)
    - [Historical.csv](#-historicalcsv)
    - [Calibrationhistory.json](#-calibrationhistoryjson)
    - [Configuration.json](#-configurationjson)
-   - [CalibrationDefault.json Details](#-calibrationdefaultjson-details)
+   - [CalibrationDefault.json](#-calibrationdefaultjson)
 ## Summary
 
 In the last decade, Virtual Reality (VR) has emerged as a promising tool for upper limb rehabilitation, effectively complementing conventional therapies. However, one of the main challenges lies in designing virtual environments that adapt to the specific needs of each patient, considering their unique motor limitations. An inadequately adapted environment can result in overexertion and the inability to perform exercises, negatively affecting both the patient's motivation and their recovery.
@@ -27,7 +27,7 @@ The quantitative results obtained demonstrate that this dynamic adjustment of th
 
 Contains data collected from the sessions conducted at HNPT, including the file obtained after applying the calibration to a user of median height (166 cm). This file is used in the test for the standard configuration.
 
-#### 📁 Data-Participants Folder
+#### 📁 Data Participants Folder
 
 Contains a subfolder for each participant identifier. "P" indicates a SCI patient, and "H" indicates a healthy participant. Within each subfolder:
 
