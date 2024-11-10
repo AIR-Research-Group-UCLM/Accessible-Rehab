@@ -2,17 +2,17 @@
 
 ## Table of Contents
 1. [Summary](#summary)
-2. [Data Folder](#data-folder)
-   - [Data Participants Folder](#-dataparticipants-folder)
-   - [CalibrationDefault.json](#-calibrationdefaultjson)
-   - [Resume.md](#-resumemd)
-3. [Detailed Explanation of Files](#detailed-explanation-of-files)
-   - [Historical.csv](#-historicalcsv)
-   - [Calibrationhistory.json](#-calibrationhistoryjson)
-   - [Configuration.json](#-configurationjson)
-   - [CalibrationDefault.json](#-calibrationdefaultjson)
+2. [Scripts Folder](#scripts-folder)
+3. [Data Folder](#data-folder)
+   - [Data Participants Folder](#data-participants-folder)
+   - [CalibrationDefault.json](#calibrationdefaultjson)
+   - [Resume.md](#resumemd)
+4. [Detailed Explanation of Files](#detailed-explanation-of-files)
+   - [Historical.csv](#historicalcsv)
+   - [Calibrationhistory.json](#calibrationhistoryjson)
+   - [Configuration.json](#configurationjson)
+5. [References](#references)
 ## Summary
-
 In the last decade, Virtual Reality (VR) has emerged as a promising tool for upper limb rehabilitation, effectively complementing conventional therapies. However, one of the main challenges lies in designing virtual environments that adapt to the specific needs of each patient, considering their unique motor limitations. An inadequately adapted environment can result in overexertion and the inability to perform exercises, negatively affecting both the patient's motivation and their recovery.
 
 In this article, we present an innovative calibration method that individually identifies and maps motor limitations on the left and right sides of the body. As a result, an irregular volume, formed by the interconnection of three elliptical shapes, is generated that envelops the patient and represents their safe range of movements. Furthermore, a second method is introduced that automatically readjusts the location of objects within the virtual environment to the safe space generated, optimizing the patient's accessibility and interaction with therapy elements.
@@ -22,6 +22,28 @@ To test the results, an immersive VR environment was designed in which the afore
 The quantitative results obtained demonstrate that this dynamic adjustment of the environment allows for adaptation that leads to a 100% success rate in task completion after the automatic adjustment, compared to a 62.5% success rate when using a configuration with virtual elements adapted to the motor capabilities of a healthy person (for both healthy participants and patients). This adjustment not only facilitates a greater number of exercise repetitions, but also reduces the time needed to access each object, with an average reduction in time of 47.94% across the entire sample. This reduction is even more significant when considering only the group of SCI patients, with a reduction of 53.78%. Additionally, the qualitative evaluation complements the study with a perception of ease of use for the calibration (mean = 1.29 ± 0.46) and low complexity in accessing the interactive objects after the automatic adjustment (mean = 1.12 ± 0.45). These results demonstrate the effectiveness of the proposed algorithms and the improved user experience.
 
 ## Organization
+
+### 📁 Scripts Folder
+
+
+The **Scripts** folder contains some of the code files used in the study described in the article to develop the adaptive VR environment:
+
+- **`AutomaticCalibration`**: Handles automatic calibration processes and configurations for adapting VR environments based on patient-specific data.
+- **`AutomaticCalibrationConf`**: Manages settings for the automatic calibration, defining exercise zones and height limits. Configurable to adapt exercise areas such as left, right, central, or global zones.
+- **`BlockAutroGrasp`**: Manages object interaction in VR by implementing a proximity-based auto-grab mechanism. When the user approaches an object, it automatically attaches to their hand and remains held until it makes contact with the designated goal surface, at which point it is released. This interaction model enhances engagement with virtual elements and provides tactile feedback upon successful release.
+- **`CalibrationConstants`**: Stores constant values used in the calibration process, ensuring consistency in key elements like tracking and position recording.
+- **`CalibrationStorer`**: Responsible for storing calibration data, allowing sessions to be saved and resumed for continuous or repeat usage.
+- **`CalibrationUtilities`**: Provides helper functions for boundary checking and positional adjustments, supporting calibration accuracy and adaptability.
+- **`GeneratorCubes`**: Dynamically generates cubes at specified positions within the VR environment, used for various exercises and tests.
+- **`GoalBox`**: Tracks exercise progress by monitoring blocks moved into a target zone, with visual and audio feedback for a more interactive experience.
+- **`HalfCircleDrawer`**: Utilized to create half-circle visuals that delineate boundaries within the VR environment, marking movement limits effectively.
+- **`HandCalibrationConfiguration`**: Defines positional and rotational limits for hand movements obtained during calibration. These are applied in the test to verify and adjust the VR environment with respect to each patient’s range of motion (ROM).
+- **`MainMenu`**: Main menu for the immersive VR environment, providing options for calibration, configuration, and adaptation tests.
+- **`ObjectPosition`**: Stores and manages x, y, and z coordinates for object positions, helping maintain spatial data.
+- **`PlaneCenterArea`**: Defines specific zones within the VR environment, essential for delineating movement boundaries and center zones.
+- **`SerializablePositionList`**: Allows serialization of lists of object positions for tracking and managing spatial data efficiently.
+- **`TestCalibration`**: Core script located in the testing scene, responsible for applying detection and dynamic adjustment algorithms to evaluate the effectiveness of calibration and adaptation in the VR environment. Uses calibrated positions to test and re-adjust object locations based on patient-specific limitations.
+- **`VirtualObject`**: Represents an object in the VR environment, containing properties for positioning and enabling transformations based on calibration data.
 
 ### 📁 Data Folder
 
