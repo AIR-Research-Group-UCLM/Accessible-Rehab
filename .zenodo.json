@@ -1,0 +1,63 @@
+{
+  "title": "Accessible-Rehab: automated adjustment of virtual environment elements to the safe range of motion of each patient",
+  "description": "Calibration method that individually maps the motor limitations of each patient as an irregular volume representing their safe range of motion, and automatically adjusts the elements of the virtual environment to that personalised space. This work was supported by the Spanish Ministry of Science, Innovation and Universities / Agencia Estatal de Investigación under grant PID2020-117361RB-C21 (project REHAB-IMMERSIVE), and carried out by the AIR Research Group of the Universidad de Castilla-La Mancha in collaboration with the Hospital Nacional de Parapléjicos (Toledo, Spain).",
+  "creators": [
+    {
+      "name": "Herrera, Vanesa",
+      "affiliation": "Universidad de Castilla-La Mancha, Ciudad Real, Spain",
+      "orcid": "0000-0002-6187-4794"
+    },
+    {
+      "name": "Albusac, Javier",
+      "affiliation": "Universidad de Castilla-La Mancha, Ciudad Real, Spain",
+      "orcid": "0000-0003-1889-3065"
+    },
+    {
+      "name": "Castro-Schez, José Jesús",
+      "affiliation": "Universidad de Castilla-La Mancha, Ciudad Real, Spain",
+      "orcid": "0000-0002-0201-7653"
+    },
+    {
+      "name": "González-Morcillo, Carlos",
+      "affiliation": "Universidad de Castilla-La Mancha, Ciudad Real, Spain",
+      "orcid": "0000-0002-8568-9542"
+    },
+    {
+      "name": "Monekosso, Dorothy N.",
+      "affiliation": "Durham University, United Kingdom",
+      "orcid": "0000-0001-7322-5911"
+    },
+    {
+      "name": "Pacheco-Martínez, S.",
+      "affiliation": "Hospital Nacional de Parapléjicos, Toledo, Spain"
+    },
+    {
+      "name": "Perales-Gómez, Raquel",
+      "affiliation": "Hospital Nacional de Parapléjicos, Toledo, Spain",
+      "orcid": "0000-0002-8015-8216"
+    },
+    {
+      "name": "de los Reyes-Guzmán, Ana",
+      "affiliation": "Hospital Nacional de Parapléjicos, Toledo, Spain",
+      "orcid": "0000-0003-2905-2405"
+    }
+  ],
+  "upload_type": "software",
+  "license": "mit",
+  "keywords": [
+    "accessibility",
+    "virtual reality",
+    "calibration",
+    "range of motion",
+    "upper limb rehabilitation"
+  ],
+  "access_right": "open",
+  "language": "eng",
+  "related_identifiers": [
+    {
+      "identifier": "10.1007/s10055-024-01078-w",
+      "relation": "isSupplementTo",
+      "scheme": "doi"
+    }
+  ]
+}
